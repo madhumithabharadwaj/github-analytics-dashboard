@@ -1,84 +1,94 @@
-# Getting Started with Create React App
+# GitHub Analytics Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack analytics application that helps developers understand GitHub repository activity through interactive metrics and visualizations.
 
-## Available Scripts
+The application retrieves repository data through the GitHub API and analyzes contributor activity, commits, issues, pull requests, and development trends.
 
-In the project directory, you can run:
+## Demo
 
-### we have to add client ID in Login.js line22
-### we have to change personal access token in app.py line19
-
-### `npm install`
-To install node modules package
-
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-###DEMO VIDEO
-
+A demo video of the application is included in this repository:
 
 https://github.com/madhumithabharadwaj/spm/assets/49988224/dec94249-c21b-4210-921c-444851331f10
 
+## Features
 
+* Analyze GitHub repository activity and development trends
+* Track contributor activity and commit frequency
+* Analyze issue activity and resolution patterns
+* Examine pull request activity
+* Retrieve repository information using the GitHub API
+* Visualize repository metrics through an interactive frontend
+* Support GitHub authentication for accessing repository data
 
-### `npm run build` fails to minify
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Frontend**
+
+* React.js
+* JavaScript
+* Material UI
+* Bootstrap
+* Axios
+
+**Backend**
+
+* Python
+* Flask
+* GitHub REST API
+
+**Tools & APIs**
+
+* GitHub API
+* Octokit
+* Git
+* GitHub
+
+## How It Works
+
+1. The user provides or authenticates access to GitHub repository data.
+2. The application retrieves repository information through the GitHub API.
+3. The Flask backend processes repository activity and development metrics.
+4. The React frontend presents the resulting analytics through an interactive interface.
+
+## Repository Structure
+
+```text
+github-analytics-dashboard/
+├── Login_Page/     # Authentication-related components
+├── public/         # Static frontend assets
+├── src/            # React frontend and Flask/backend logic
+├── package.json    # Frontend dependencies and scripts
+└── README.md
+```
+
+## Running the Project
+
+Install the frontend dependencies:
+
+```bash
+npm install
+```
+
+Start the React development server:
+
+```bash
+npm start
+```
+
+The application will run locally at:
+
+```text
+http://localhost:3000
+```
+
+## Project Purpose
+
+This project was developed to provide a consolidated view of GitHub repository activity and make it easier to identify development patterns, contributor activity, and potential workflow bottlenecks from repository data.
+
+## Future Improvements
+
+* Move API credentials to environment variables
+* Improve authentication and credential management
+* Add additional repository health metrics
+* Expand automated testing
+* Improve deployment configuration
